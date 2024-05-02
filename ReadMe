@@ -10,10 +10,10 @@ Ensure you have the following software and packages installed:
 R version 3.3.2 or higher
 RStudio or a similar R-compatible IDE
 Required R packages:
-
 dplyr
 stringr
 arules
+
 You can install these packages using install.packages("package_name"). Include a library call for each package at the beginning of your scripts.
 
 **Installation**
@@ -47,8 +47,12 @@ Versioning
 Version 1.0 of the FavTrip Brand Analysis.
 
 **Authors**
-Your Name
-Any collaborators if applicable
+Patrick O'Malley
+Leo Moore
+Sam Martin
+Colin Tripman
+Andres Guevara
+
 Acknowledgments
 Thanks to mentors, colleagues, or data providers who contributed to the project.
 Special thanks to the data analytics team at FavTrip for providing the transaction data.
