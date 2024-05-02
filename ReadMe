@@ -22,12 +22,16 @@ Set your working directory in R to the folder containing the project files.
 
 **Scripts and Usage**
 BeverageAndTobaccoBrandAdded.R - This script processes the FavTrip2023.csv file to identify and append a new Brand column based on predefined keywords. Outputs BeverageCategoryData.csv.
+
 AddingColumns.R - Adds date and time columns to the data, converting date strings to POSIXct datetime objects. 
 It uses Finalized_Data.csv to output data_for_modeling.csv with additional date-related information.
+
 BindGroceryBrands.R - Combines brand data from BeverageCategoryData.csv and groceries_brands.csv, excluding the "GROCERY" department from the former. 
 The script outputs the combined data to Finalized_Data.csv.
+
 MarketBasketAnalysis.R - Performs market basket analysis to find associations between brands based on transaction data. 
 The script processes data_for_modeling.csv and outputs association rules for various brands.
+
 Outputs
 Each script outputs a CSV file that serves as an input for the next step in the analysis pipeline:
 
@@ -39,11 +43,12 @@ Additionally, association rules are displayed within the console and can be redi
 **Project Structure**
 The project is structured sequentially where each script is dependent on the outputs of the previous scripts:
 
+Binding of grocery data.
 Identification of brands.
 Addition of date and time data.
-Binding of grocery data.
 Market basket analysis for discovering brand associations.
-Versioning
+
+**Versioning**
 Version 1.0 of the FavTrip Brand Analysis.
 
 **Authors**
@@ -54,7 +59,7 @@ Colin Tripman
 Andres Guevara
 
 Acknowledgments
-Thanks to mentors, colleagues, or data providers who contributed to the project.
-Special thanks to the data analytics team at FavTrip for providing the transaction data.
-This README provides detailed guidance for each part of the project to ensure reproducibility and understanding of the analysis. 
-Adjust the content as necessary to better fit your project's specifics.
+Thanks to mentors and colleagues who contributed to the project.
+Special thanks to Babir at FavTrip for providing the transaction data.
+
+
