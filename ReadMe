@@ -1,0 +1,56 @@
+**FavTrip Brand Analysis**
+This project involves analyzing transaction data from FavTrip gas stations, focusing on identifying various product brands based on keywords within transaction descriptions. 
+The analysis enhances understanding of brand preferences across different product categories, notably tobacco and beverages.
+
+**Getting Started**
+These instructions will guide you through setting up and running the project on your local machine for development and testing purposes.
+
+**Prerequisites**
+Ensure you have the following software and packages installed:
+R version 3.3.2 or higher
+RStudio or a similar R-compatible IDE
+Required R packages:
+
+dplyr
+stringr
+arules
+You can install these packages using install.packages("package_name"). Include a library call for each package at the beginning of your scripts.
+
+**Installation**
+Download the project files to your local machine.
+Set your working directory in R to the folder containing the project files.
+
+**Scripts and Usage**
+BeverageAndTobaccoBrandAdded.R - This script processes the FavTrip2023.csv file to identify and append a new Brand column based on predefined keywords. Outputs BeverageCategoryData.csv.
+AddingColumns.R - Adds date and time columns to the data, converting date strings to POSIXct datetime objects. 
+It uses Finalized_Data.csv to output data_for_modeling.csv with additional date-related information.
+BindGroceryBrands.R - Combines brand data from BeverageCategoryData.csv and groceries_brands.csv, excluding the "GROCERY" department from the former. 
+The script outputs the combined data to Finalized_Data.csv.
+MarketBasketAnalysis.R - Performs market basket analysis to find associations between brands based on transaction data. 
+The script processes data_for_modeling.csv and outputs association rules for various brands.
+Outputs
+Each script outputs a CSV file that serves as an input for the next step in the analysis pipeline:
+
+BeverageCategoryData.csv
+Finalized_Data.csv
+data_for_modeling.csv
+Additionally, association rules are displayed within the console and can be redirected to a file if required.
+
+**Project Structure**
+The project is structured sequentially where each script is dependent on the outputs of the previous scripts:
+
+Identification of brands.
+Addition of date and time data.
+Binding of grocery data.
+Market basket analysis for discovering brand associations.
+Versioning
+Version 1.0 of the FavTrip Brand Analysis.
+
+**Authors**
+Your Name
+Any collaborators if applicable
+Acknowledgments
+Thanks to mentors, colleagues, or data providers who contributed to the project.
+Special thanks to the data analytics team at FavTrip for providing the transaction data.
+This README provides detailed guidance for each part of the project to ensure reproducibility and understanding of the analysis. 
+Adjust the content as necessary to better fit your project's specifics.
